@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasq - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5v5z5z2muI0I9Bsd2KlJ7UuUe/tdI7K4up6b+g" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="/" class="logo">Tas<span>q</span></a>
+                </h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}" class="cta">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Stay organized with <a href="/" class="logo">Tas<span>q</span></a>                </h2>
+                <p>Manage your tasks, notes, and reminders in one place. Join Tasq now and boost your productivity.</p>
+                <a href="{{ url_for('register') }}" class="cta">Get Started</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tasq. All rights reserved.</p>
+    </footer>
+</body>
+</html>
